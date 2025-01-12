@@ -1,0 +1,13 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "main": "src/login/login.js",
+  "type": "module",
+  "scripts": {
+    "start": "parcel serve src/login/login.html src/employee/employee.html src/admin/admin.html",
+    "build": "parcel build src"
+  },
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
+}

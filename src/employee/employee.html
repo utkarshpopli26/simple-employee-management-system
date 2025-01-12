@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="employee.css">
+</head>
+<body>
+    <div class="header">    
+        <h2>Hello Username<h2>
+        <button id="logout" class="button">Log out</button>
+    </div>
+
+    <div class="tasksSummary">
+        <!-- Tasks summary will come up here -->
+         <div class="newTasks">
+            <h2>New Tasks</h2>
+            <h1>0</h1>
+        </div>
+        <div class="acceptedTasks">
+            <h2>Accepted Tasks</h2>
+            <h1>0</h1>
+        </div>
+        <div class="completedTasks">
+            <h2>Completed Tasks</h2>
+            <h1>0</h1>
+        </div>
+        <div class="failedTasks">
+            <h2>Failed Tasks</h2>
+            <h1>0</h1>
+        </div>
+    </div>
+
+    <div class="tasks">
+        <!-- <div class="completedTasks" style="width: 300px; height: 90%;">
+            <h2>Task 3</h2>
+            <p>Description of the task</p>
+            <button class="accept">Completed</button>
+        </div>
+
+        <div class="newTasks" style="width: 300px; height: 90%;">
+            <h2>Task 1</h2>
+            <p>Description of the task</p>
+            <div>
+                <button class="accept">Accept</button>
+                <button class="reject">Reject</buttton>  
+            </div>
+        </div>
+
+        <div class="acceptedTasks" style="width: 300px; height: 90%;">
+            <h2>Task 2</h2>
+            <p>Description of the task</p>
+            <div>
+                <button class="accept">Complete</button>
+                <button class="reject">Fail</buttton>  
+            </div>
+        </div> -->
+    </div>
+    <script type="module" src="../Utils/localStorage.js"></script>
+    <script type="module" src="employee.js"></script>
+</body>
+</html>

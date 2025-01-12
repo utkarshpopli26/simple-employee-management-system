@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(69, 69, 69);
+}
+
+.header .button {
+    background-color: #f44336; /* Red background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 6px 20px; /* Some padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the button inline */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Add some margin */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.header .button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+.header h2{
+    font-size:xx-large; 
+    font-weight:bolder;
+    color: white;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+    background-color: #1f1f1f;
+    border-radius: 4px;
+}

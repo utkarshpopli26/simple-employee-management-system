@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="header">    
+        <h2>Hello Admin</h2>
+        <div style="display: flex; align-items: center;">
+            <button id="logout" class="button" style="padding: 6px 20px;">Log out</button>
+        </div>
+    </div>
+    <div class="form-container">
+        <form class="task-form">
+            <h2>Assign Task</h2>
+            <label for="assignTo">Assign To:</label>
+            <select id="assignTo" name="assignTo" required></select>
+
+            <label for="assignedDate">Assigned Date:</label>
+            <input type="date" id="assignedDate" name="assignedDate" required>
+
+            <label for="title">Task Title</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="Design">Design</option>
+                <option value="Development">Development</option>
+                <option value="Testing">Testing</option>
+                <option value="Meeting">Meeting</option>
+                <option value="Support">Support</option>
+            </select>
+
+            <label for="taskDescription">Task Description:</label>
+            <textarea id="taskDescription" name="taskDescription" rows="4" required></textarea>
+
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="form-container AllTasks">
+        <div class="tasks-heading">
+            <h3 >Employee Name</h3>
+            <h3 style="color: #85c1e9;">New Tasks</h3>
+            <h3 style="color: #f9e79f">Acepted Tasks</h3>
+            <h3 style="color: #a9dfbf;">Completed</h3>
+            <h3 style="color: #f5b7b1">Failed</h3>
+        </div>
+        <!-- <div class="tasks-list">
+            <h3>Username</h3>
+            <h3 style="color: #85c1e9;">2</h3>
+            <h3 style="color: #f9e79f">1</h3>
+            <h3 style="color: #a9dfbf;">1</h3>
+            <h3 style="color: #f5b7b1">0</h3>
+        </div>
+        <div class="tasks-list">
+            <h3>Username</h3>
+            <h3 style="color: #85c1e9;">2</h3>
+            <h3 style="color: #f9e79f">1</h3>
+            <h3 style="color: #a9dfbf;">1</h3>
+            <h3 style="color: #f5b7b1">0</h3>
+        </div> -->
+        </div>
+    </div>
+    <script type="module" src="../Utils/localStorage.js"></script>
+    <script type="module" src="admin.js"></script>
+</body>
+</html>
